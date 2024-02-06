@@ -7,6 +7,8 @@ html {
   overflow: hidden;
   background-color: #333;
   border-radius:10px;
+  box-shadow: 0 11px 20px 0 rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to bottom, #383838, #000000);
 }
 
 .topnav a {
@@ -30,4 +32,5 @@ html {
   background-color: #04AA6D;
   color: white;
   border-radius:10px;
+  background: linear-gradient(to bottom, #007a78, #09008a);
 }
