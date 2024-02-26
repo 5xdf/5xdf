@@ -6,5 +6,5 @@ publicDir = "/"
 deploymentTarget = "static"
 
 [auth]
-pageEnabled = true
+pageEnabled = false
 buttonEnabled = false

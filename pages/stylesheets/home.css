@@ -1,7 +1,8 @@
+@import url("https://github.com/hprobotic/Google-Sans-Font/raw/master/GoogleSans-Regular.ttf");
 html {
   height: 100%;
   width: 100%;
-  font-family: 'Comfortaa', sans-serif;
+  font-family: 'Google Sans', sans-serif;
   background-color:rgb(50,50,50);
   color:rgb(255,255,255)
 }
