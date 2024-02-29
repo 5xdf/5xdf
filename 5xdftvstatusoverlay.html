@@ -22,7 +22,7 @@
             border: 1px solid rgba(0,0,0,1);
             animation: ye 1s cubic-bezier(1,0.2,0,1);
         }
-      .overlay_below {
+      .underlay {
             position: fixed;
             top: 70px;
             right: 20px;
@@ -33,17 +33,31 @@
             padding-left: 20px;
             padding-right: 20px;
             border-radius: 500px;
-            display: block; /* Initially hidden */
+            display: none; /* Initially hidden */
             border: 1px solid rgba(0,0,0,1);
             animation: ye 1s cubic-bezier(1,0.2,0,1);
         }
       @keyframes ye {
-        0% {
+        from {
           transform:scale(0);
         }
-        100% {
+        to {
           transform:scale(1);
         }
+      @keyframes hm {
+        0% {
+          padding-left: 20px;
+          padding-right:20px;
+        }
+        50% {
+          padding-left: 30px;
+          padding-right:30px;
+        }
+        100% {
+          padding-left: 20px;
+          padding-right:20px;
+        }
+      }
       }
     </style>
   </head>
@@ -52,8 +66,13 @@
     <div class="overlay" id="notificationOverlay">
         No issues, running normally!
     </div>
-    <div class="overlay_below">
+    <div class="underlay" id="h">
       No new levels will be added right now.
     </div>
+    <script>
+      setTimeout(()=>{
+        document.getElementById("h").style.display = "block";
+      },300)
+    </script>
   </body>
 </html>
