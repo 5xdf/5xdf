@@ -11,11 +11,16 @@
             position: fixed;
             top: 20px;
             right: 20px;
-            background-color: #333;
+            background-color: rgba(50,50,50,0.8);
             color: #fff;
-            padding: 10px;
-            border-radius: 5px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-radius: 500px;
             display: block; /* Initially hidden */
+            backdrop-filter:blur(10px);
+            border: 1px solid rgba(255,255,255,1);
             animation: ye 1s cubic-bezier(1,0.2,0,1);
         }
       @keyframes ye {
@@ -31,7 +36,7 @@
   <body>
     <script src="https://5xdftv.statuspage.io/embed/script.js"></script>
     <div class="overlay" id="notificationOverlay">
-        ⚠️ Stream Buffering Issues
+        No issues, running normally!
     </div>
   </body>
 </html>
