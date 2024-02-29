@@ -8,21 +8,7 @@
           transition:1s;
         }
         .overlay {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background-color: rgba(50,50,50,0.8);
-            color: #fff;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-left: 20px;
-            padding-right: 20px;
-            border-radius: 500px;
-            display: block; /* Initially hidden */
-            border: 1px solid rgba(0,0,0,1);
-            animation: ye 1s ease;
-        }
-      .underlay {
+            transition:1s;
             position: fixed;
             top: 70px;
             right: 20px;
@@ -35,9 +21,24 @@
             border-radius: 500px;
             display: block; /* Initially hidden */
             border: 1px solid rgba(0,0,0,1);
-            animation: ye 1s ease 300ms;
+        }
+      .underlay {
+            transition:1s;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: rgba(50,50,50,0.8);
+            color: #fff;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-radius: 500px;
+            display: block; /* Initially hidden */
+            border: 1px solid rgba(0,0,0,1);
         }
         .littlenote {
+          transition:1s;
           position: fixed;
           top: 120px;
           right: 20px;
@@ -51,7 +52,6 @@
           border-radius: 500px;
           display: block; /* Initially hidden */
           border: 1px solid rgba(0,0,0,1);
-          animation: ye 1s ease 600ms;
         }
       @keyframes ye {
         0% {
