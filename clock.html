@@ -43,7 +43,7 @@ var c;
 setInterval(
 c = function() {
     // output.innerText = moment().format(urlParams["format"] || 'DD/MM/YYYY HH:mm:ss');
-    output.innerText = moment().format(urlParams["format"] || 'MMM DD, YYYY | hh:mm:ssa');
+    output.innerText = moment().format(urlParams["format"] || 'MMM DD, YYYY | hh:mm:ss.SS a');
     // ^ old string, above, new preferred below:
     // output.innerText = moment().format('LL LTS [GMT]ZZ');
 }, 1000);
